@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints all possible diffrent combination of these digits
+ * main - Prog Entry points
  * Return: Always 0 (Success)
  */
 int main(void)
