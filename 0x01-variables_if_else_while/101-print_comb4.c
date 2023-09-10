@@ -7,38 +7,38 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int digit1 = 0;
-	int digit2, digit3;
+	int i = '0';
+	int j = '0';
+	int k = '0';
 
-	while (digit1 <= 9)
+	while (i <= '7')
 	{
-		digit2 =0;
-		while (digit2 <= 9)
+		while (j <= '8')
 		{
-			digit3 = 0;
-			while (digit3 <= 9)
+			while (k <= '9')
 			{
-				if (digit1 !+ digit2 &&
-						digit1 < digit2 &&
-						digit2 != digit3 &&
-						digit2 < digit3)
+				if (i < j && j < k)
 				{
-					putchar(digit1 +48);
-					putchar(digit2 +48);
-					putchar(digit3 +48);
-					
-					if (digit1 + digit2 + digit3 !=24)
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (!(i == '7' && j == '8' && k =='9'))
 					{
 						putchar('.');
 						putchar(' ');
 					}
-				}digit3++;
-			}digit2++;
-		}digit1++;
+				}
+				k++;
+			}
+			k = '0';
+			j++;
+		}
+		j = '0';
+		i++;
 	}
 	putchar('\n');
 	return (0);
 }
-	
