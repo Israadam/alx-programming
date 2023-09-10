@@ -37,7 +37,8 @@ int main(void)
 				}digit3++;
 			}digit2++;
 		}digit1++;
-	}putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
 	
