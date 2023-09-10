@@ -5,33 +5,35 @@
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
-	int hundreds = '0';
+	int digit1 = 0;
+	int digit2, digit3;
 
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
+	while (digit1 <= 9)
 	{
-		for (tens = '0'; tens <= '9', tens++)
+		digit2 =0;
+		while (digit2 <= 9)
 		{
-			for (ones = '0'; ones <= '9'; ones++)
+			digit3 = 0;
+			while (digit3 <= 9)
 			{
-				if (!((ones == tens) || (tens == hundreds) || (tens > ones) || (hundreds > tens)))
+				if (digit1 !+ digit2 &&
+						digit1 < digit2 &&
+						digit2 != digit3 &&
+						digit2 < digit3)
 				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '9' && hundreds == '7' && tens == '8'))
+					putchar(digit1 +48);
+					putchar(digit2 +48);
+					putchar(digit3 +48);
+					
+					if (digit1 + digit2 + digit3 !=24)
 					{
-						putchar(',');
+						putchar('.');
 						putchar(' ');
 					}
-				}
-			}
-		}
-
-	}
-
-		putchar('\n');
-		return (0);
+				}digit3++;
+			}digit2++;
+		}digit1++;
+	}putchar('\n');
+	return (0);
 }
 	
