@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-void times_table(void)
+void times_table(void) - function time table
 {
 	int i, j, result;
 
