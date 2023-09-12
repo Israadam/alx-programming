@@ -1,5 +1,11 @@
 #include "main.h"
-#include <stdio.h>
+
+/**
+ * time_table - checks description
+ *Description: it prints 9 times table starting with 0
+ *Return: nothing
+ */
+
 void times_table(void)
 {
 	int i, j, result;
