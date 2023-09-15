@@ -13,7 +13,6 @@ int main(void)
 	{
 		if (n % i == 0)
 		{
-
 			if (n == i)
 			{
 				printf("%1d\n", i);
