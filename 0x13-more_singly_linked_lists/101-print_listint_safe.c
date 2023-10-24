@@ -30,7 +30,7 @@ return (newlist);
 
 /**
  * print_listint_sade -prints a listint_t linked list
- * @head: pointers to the start of the list
+ * @head: pointer to the start of the list
  * Return: the number of the nodes in the list
  */
 size_t print_listint_safe(const listint_t *head)
