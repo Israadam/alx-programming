@@ -29,7 +29,7 @@ return (newlist);
 }
 
 /**
- * print_listint_sade -prints a listint_t linked list
+ * print_listint_safe -prints a listint_t linked list
  * @head: pointer to the start of the list
  * Return: the number of the nodes in the list
  */
